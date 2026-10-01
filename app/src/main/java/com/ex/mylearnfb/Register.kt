@@ -18,9 +18,9 @@ class Register : AppCompatActivity() {
 
         button_register.setOnClickListener {
 
-            if(password.text.toString() == password_re.text.toString())
+            if(register_password.text.toString() == password_re.text.toString())
             {
-                auth.createUserWithEmailAndPassword(email_register.text.toString(), password.text.toString())
+                auth.createUserWithEmailAndPassword(email_register.text.toString(), register_password.text.toString())
                     .addOnCompleteListener(this) {task ->
                         if(task.isSuccessful) {
                             Toast.makeText(baseContext, "Registering Success", Toast.LENGTH_SHORT).show()
