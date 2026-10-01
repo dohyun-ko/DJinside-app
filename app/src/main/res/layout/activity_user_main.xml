@@ -43,7 +43,9 @@
         android:id="@+id/horizontalScrollView2"
         android:layout_width="412dp"
         android:layout_height="288dp"
-        tools:layout_editor_absoluteY="386dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <LinearLayout
             android:layout_width="wrap_content"
