@@ -2,9 +2,10 @@ package com.ex.mylearnfb
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_register.*
 
 class Register : AppCompatActivity() {
 
@@ -14,6 +15,11 @@ class Register : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
+
+        val email_register = findViewById<EditText>(R.id.email_register)
+        val register_password = findViewById<EditText>(R.id.register_password)
+        val password_re = findViewById<EditText>(R.id.password_re)
+        val button_register = findViewById<Button>(R.id.button_register)
         auth = FirebaseAuth.getInstance()
 
         button_register.setOnClickListener {

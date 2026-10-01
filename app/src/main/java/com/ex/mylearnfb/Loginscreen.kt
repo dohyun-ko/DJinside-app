@@ -3,10 +3,11 @@ package com.ex.mylearnfb
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
 import android.util.Log
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_loginscreen.*
 
 class Loginscreen : AppCompatActivity() {
 
@@ -15,6 +16,11 @@ class Loginscreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_loginscreen)
+
+        val login_email = findViewById<EditText>(R.id.login_email)
+        val login_password = findViewById<EditText>(R.id.login_password)
+        val login_button = findViewById<Button>(R.id.login_button)
+        val login_button_register = findViewById<Button>(R.id.login_button_register)
 
         auth = FirebaseAuth.getInstance()
 

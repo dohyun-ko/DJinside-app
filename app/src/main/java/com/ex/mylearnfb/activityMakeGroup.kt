@@ -3,7 +3,6 @@ package com.ex.mylearnfb
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_my_groups.*
 
 class activityMakeGroup : AppCompatActivity() {
 
